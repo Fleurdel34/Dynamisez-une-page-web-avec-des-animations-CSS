@@ -1,0 +1,23 @@
+{
+  "name": "dynamisez-une-page-web-avec-des-animations-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script":"node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fleurdel34/Dynamisez-une-page-web-avec-des-animations-CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fleurdel34/Dynamisez-une-page-web-avec-des-animations-CSS/issues"
+  },
+  "homepage": "https://github.com/Fleurdel34/Dynamisez-une-page-web-avec-des-animations-CSS#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "description": ""
+}
