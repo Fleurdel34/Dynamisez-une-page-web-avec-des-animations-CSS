@@ -4,14 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "script":"node-sass -watch scss -o css"
-  },
+    "sass":"sass --watch scss/base/style.scss css/style.css",
+    "prefix":"postcss css/style.css --use autoprefixer -d css/prefixed"
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Fleurdel34/Dynamisez-une-page-web-avec-des-animations-CSS.git"
   },
   "author": "",
-  "license": "ISC",
+  
   "bugs": {
     "url": "https://github.com/Fleurdel34/Dynamisez-une-page-web-avec-des-animations-CSS/issues"
   },
