@@ -1,5 +1,16 @@
-body {
-  background-color: #9356DC;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Njc3MvYmFzZS9zdHlsZS5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBO0VBQ0kseUJBTFk7QUNFaEIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000000;
+  width: 100%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Njc3MvYmFzZS9zdHlsZS5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlJQTtFQUNJLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QUNoSUo7O0FEbUlBO0VBRUksaUJBQUE7RUFDQSxrQkFBQTtFQUNBLG1EQWxJUztFQW1JVCxnQkF2SXFCO0VBd0lyQixjQTFJVTtFQTJJVixXQUFBO0FDaklKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

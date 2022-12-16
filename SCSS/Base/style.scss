@@ -1,7 +1,147 @@
 $colour-primary:#9356DC;
 $colour-secondary:#FF79DA;
 $colour-tertiary:#99E2D0;
+$colour-black:#000000;
+$colour-text-white:#fff;
+$colour-background-white:#fff;
+$colour-slate-grey:#708090;
+$colour-grey:#606060;
+$font-weight-bold:bold;
+$font-family:'Roboto', Arial, Helvetica, sans-serif;
+$font-family-logo-title:'Shrikhand', Arial, Helvetica, sans-serif;
+$font-size: 24px 22px 20px 18px 14px 12px;
+$box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
-body{
-    background-color: $colour-primary;
+@mixin title-h1{
+    font-family: $font-family-logo-title;
+    color:$colour-black;
+    font-size:nth($font-size,1);
+    font-weight:$font-weight;
+    opacity:1;
 }
+
+@mixin li{
+    background-color: $colour-slate-grey;
+    box-shadow: $box-shadow;
+    border: 2px solid $colour-slate-grey;
+    border-radius: 20px;
+    width:50%;
+    height:100px;
+}
+
+@mixin span-header{
+    font-family: $font-family;
+    color:$colour-black;
+    font-size:nth($font-size,4);
+    font-style: $font-weight-bold;
+    opacity:1;
+    text-decoration: none;
+    padding: 20px;
+}
+
+@mixin title-h2{
+    font-family: $font-family-logo-title;
+    color:$colour-black;
+    font-size:nth($font-size,2);
+    font-weight:$font-weight-bold;
+    opacity:1;
+}
+
+@mixin title-h2-footer{
+    font-family: $font-family-logo-title;
+    color:$colour-text-white;
+    font-size:nth($font-size,2);
+    font-weight:$font-weight-bold;
+    opacity:1;
+}
+
+@mixin title-h3{
+    font-family: $font-family-logo-title;
+    color:$colour-black;
+    font-size:nth($font-size,3);
+    font-weight:$font-weight-bold;
+    opacity:1;
+}
+
+@mixin card{
+    background: $colour-background-white;
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+    width: 100%; 
+    margin-left: 1rem;   
+    margin-bottom: 2rem;
+}
+
+@mixin paragraph-article{
+    font-family: $font-family;
+    color:$colour-black;
+    font-size:nth($font-size,4);
+    font-style: normal;
+    opacity:0.8;
+}
+
+@mixin paragraph-footer{
+    font-family: $font-family;
+    color:$colour-text-white;
+    font-size:nth($font-size,4);
+    font-style: normal;
+    opacity:0.8;
+}
+
+@mixin img-article{
+    width:100%;
+    height: 114px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit:cover; /*a verifier*/
+}
+
+@mixin new-text{
+    font-family: $font-family;
+    color:$colour-tertiary;
+    font-weight: $font-weight-bold;
+    border: 1px solid $colour-tertiary;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:$colour-tertiary;
+}
+
+@mixin icon-header-number{
+    border: 1px solid $colour-primary;
+    border-radius: 50px;
+    background-color:$colour-primary;
+    color:$colour-text-white;
+}
+
+@mixin icon-header-img{
+    color:$colour-icon-img;
+}
+
+@mixin icon-card-heart{
+    background-color:$colour-background-white;
+    border: 3px solid $colour-black;
+}
+
+@mixin icon-footer
+{
+    color:$colour-text-white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto; 
+    font-family: $font-family;
+    background:$colour-background-white;
+    color:$colour-black;
+    width:100%;
+}
+
+
+    
