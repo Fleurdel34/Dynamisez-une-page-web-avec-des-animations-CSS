@@ -1,16 +1,8 @@
-$colour-primary:#9356DC;
-$colour-secondary:#FF79DA;
-$colour-tertiary:#99E2D0;
-$colour-black:#000000;
-$colour-text-white:#fff;
-$colour-background-white:#fff;
-$colour-slate-grey:#708090;
-$colour-grey:#606060;
-$font-weight-bold:bold;
-$font-family:'Roboto', Arial, Helvetica, sans-serif;
-$font-family-logo-title:'Shrikhand', Arial, Helvetica, sans-serif;
-$font-size: 24px 22px 20px 18px 14px 12px;
-$box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);
+@mixin mobile-only{
+    @media screen and (max-width:map-get($breakpoints,mobile)){
+        @content;
+    };
+}
 
 @mixin title-h1{
     font-family: $font-family-logo-title;
@@ -93,7 +85,7 @@ $box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);
     height: 114px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit:cover; /*a verifier*/
+    object-fit:cover; 
 }
 
 @mixin new-text{
@@ -126,22 +118,3 @@ $box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);
 {
     color:$colour-text-white;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-}
-
-.container
-{
-    margin-left: auto;
-    margin-right: auto; 
-    font-family: $font-family;
-    background:$colour-background-white;
-    color:$colour-black;
-    width:100%;
-}
-
-
-    
