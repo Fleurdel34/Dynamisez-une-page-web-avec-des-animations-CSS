@@ -4,13 +4,6 @@
     };
 }
 
-@mixin title-h1{
-    font-family: $font-family-logo-title;
-    color:$colour-black;
-    font-size:nth($font-size,1);
-    font-weight:$font-weight;
-    opacity:1;
-}
 
 @mixin li{
     background-color: $colour-slate-grey;

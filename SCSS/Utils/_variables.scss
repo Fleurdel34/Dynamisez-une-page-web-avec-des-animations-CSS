@@ -6,9 +6,12 @@ $colour-text-white:#fff;
 $colour-background-white:#fff;
 $colour-slate-grey:#708090;
 $colour-grey:#606060;
+$colour-grey-clear:#ddd;
+$colour-grey-more-clear:#eee;
 $font-weight-bold:bold;
 $font-family:'Roboto', Arial, Helvetica, sans-serif;
 $font-family-logo-title:'Shrikhand', Arial, Helvetica, sans-serif;
-$font-size: 24px 22px 20px 18px 14px 12px;
-$box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);
+$font-size: 26px 24px 22px 20px 18px 14px 12px 10px;
+$box-shadow: inset 5px 10px 5px -10px $colour-grey;
 $breakpoints:(mobile: 768px);
+
