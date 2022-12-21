@@ -1,0 +1,142 @@
+.title__list{
+    @include mobile-only{
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        @include mobile-only{
+            @include title-h2;
+            padding: 50px 15px 20px 15px;
+        }
+    }
+    
+}
+
+.elements__list
+{
+    @include mobile-only{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+    }
+    .list__link{
+        @include mobile-only{
+            text-decoration: none;
+            color:$colour-grey; 
+        }
+    }
+    li{
+        @include mobile-only{
+            @include li;
+        }
+    }
+
+    i{
+        @include mobile-only{
+            color: $colour-grey;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+    #icon__first.fa-sharp{
+        @include mobile-only{
+            margin-right: 1.3rem;
+        }
+    }
+    #icon__store.fa-sharp{
+        @include mobile-only{
+            color: $colour-primary;
+        }
+    }
+    span{
+        @include mobile-only{
+            @include span-header;
+        }
+    } 
+    span:nth-child(1){
+        @include mobile-only{
+            @include icon-header-number;
+        }
+    }
+}
+
+.section__products{
+    @include mobile-only{
+        display: flex;
+        flex-direction: column;
+        background-color: $colour-grey-more-clear;
+        margin-top: 3rem;
+    }
+
+.title__products{
+    @include mobile-only{
+        h2{
+            @include title-h2;
+            padding: 50px 15px 20px 15px;
+        } 
+    }
+}
+
+.article__cards
+{
+    .article__products{
+        @include mobile-only{
+            width: 100%;
+            @include card;
+        } 
+        .article__link{
+            @include mobile-only{
+                text-decoration: none;
+            }
+            img{
+                @include mobile-only{
+                    object-fit: cover;
+                    height: 144px;
+                    width: 100%;
+                }
+            }
+            span{
+                @include mobile-only{
+                    @include new-text;
+                }
+            }
+            .article__textnew{
+
+                @include mobile-only{
+                    display:flex;
+                    flex-wrap: nowrap;                      
+                }
+                img{
+                    @include mobile-only{
+                        object-fit: cover;
+                        height: 144px;
+                        width: 100%;
+                        }
+                    }
+                span{
+                    @include mobile-only{
+                        @include new-text;
+                    }
+                }
+            }   
+            .article__content
+            {
+                @include mobile-only{
+                }
+                h3{
+                    @include mobile-only{
+                        @include title-h3;
+                        margin-top: 0.5rem;
+                    }
+                }
+                p{
+                    @include mobile-only{
+                        @include paragraph-article;
+                    }
+                }
+            }
+        } 
+    }    
+}
+}

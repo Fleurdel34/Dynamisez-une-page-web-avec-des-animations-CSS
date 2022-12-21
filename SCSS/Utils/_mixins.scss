@@ -4,28 +4,25 @@
     };
 }
 
-
 @mixin li{
-    background-color: $colour-slate-grey;
-    box-shadow: $box-shadow;
-    border: 2px solid $colour-slate-grey;
+    background-color: $colour-grey-more-clear;
     border-radius: 20px;
-    width:50%;
-    height:100px;
+    width:85%;
+    height:75px;
+    padding: 30px 5px 30px 5px;
+    margin-bottom: 1rem;
+    box-shadow: $box-shadow-li;
 }
 
 @mixin span-header{
     font-family: $font-family;
     color:$colour-black;
-    font-size:nth($font-size,4);
-    font-style: $font-weight-bold;
-    opacity:1;
-    text-decoration: none;
-    padding: 20px;
+    font-size:nth($font-size,6);
+    font-weight: $font-weight-bold;
 }
 
 @mixin title-h2{
-    font-family: $font-family-logo-title;
+    font-family: $font-family;
     color:$colour-black;
     font-size:nth($font-size,2);
     font-weight:$font-weight-bold;
@@ -33,44 +30,38 @@
 }
 
 @mixin title-h2-footer{
-    font-family: $font-family-logo-title;
+    font-family: $font-family-logo;
     color:$colour-text-white;
-    font-size:nth($font-size,2);
-    font-weight:$font-weight-bold;
-    opacity:1;
+    font-size:nth($font-size,5);
+    font-weight: 400;
 }
 
 @mixin title-h3{
-    font-family: $font-family-logo-title;
+    font-family: $font-family;
     color:$colour-black;
-    font-size:nth($font-size,3);
+    font-size:nth($font-size, 5);
     font-weight:$font-weight-bold;
     opacity:1;
 }
 
 @mixin card{
-    background: $colour-background-white;
-    border-radius: 20px;
-    box-shadow: $box-shadow;
-    width: 100%; 
-    margin-left: 1rem;   
+    background: $colour-text-white;
+    width: 100%;
     margin-bottom: 2rem;
 }
 
 @mixin paragraph-article{
     font-family: $font-family;
     color:$colour-black;
-    font-size:nth($font-size,4);
+    font-size:nth($font-size, 5);
     font-style: normal;
-    opacity:0.8;
+    padding-top: 5px;
 }
 
 @mixin paragraph-footer{
     font-family: $font-family;
     color:$colour-text-white;
-    font-size:nth($font-size,4);
-    font-style: normal;
-    opacity:0.8;
+    font-size:nth($font-size,6);
 }
 
 @mixin img-article{
@@ -83,31 +74,21 @@
 
 @mixin new-text{
     font-family: $font-family;
-    color:$colour-tertiary;
+    color:$colour-green;
     font-weight: $font-weight-bold;
-    border: 1px solid $colour-tertiary;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 2px;
     background-color:$colour-tertiary;
+    font-size: nth($font-size, 6);
+    padding: 8px 15px 8px 15px;
 }
 
 @mixin icon-header-number{
-    border: 1px solid $colour-primary;
     border-radius: 50px;
-    background-color:$colour-primary;
-    color:$colour-text-white;
+    padding: 5px 10px 5px 10px;
+    background-color: $colour-primary;
+    color: $colour-text-white;
+    margin-left: -1rem;
 }
 
-@mixin icon-header-img{
-    color:$colour-icon-img;
-}
 
-@mixin icon-card-heart{
-    background-color:$colour-background-white;
-    border: 3px solid $colour-black;
-}
 
-@mixin icon-footer
-{
-    color:$colour-text-white;
-}
