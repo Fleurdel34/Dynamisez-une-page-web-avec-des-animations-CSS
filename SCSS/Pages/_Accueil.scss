@@ -94,6 +94,8 @@
                     object-fit: cover;
                     height: 144px;
                     width: 100%;
+                    border-top-left-radius:20px;
+                    border-top-right-radius:20px;
                 }
             }
             span{
@@ -101,41 +103,53 @@
                     @include new-text;
                 }
             }
-            .article__textnew{
+            .article__card__content{
 
                 @include mobile-only{
-                    display:flex;
-                    flex-wrap: nowrap;                      
+                    height:60px;
+                    border-bottom-left-radius:20px;
+                    border-bottom-right-radius:20px;
                 }
-                img{
+                .article__textnew{
+
                     @include mobile-only{
-                        object-fit: cover;
-                        height: 144px;
-                        width: 100%;
+                        display: inline-block;
+                        translate: 250px -130px;                     
+                    }
+                    span{
+                        @include mobile-only{
+                            @include new-text;
                         }
                     }
-                span{
+                }   
+                .article__content
+                {
                     @include mobile-only{
-                        @include new-text;
+                        @include article-content;
+                    }
+                    h3{
+                        @include mobile-only{
+                            @include title-h3;
+                            margin-top: 0.5rem;
+                        }
+                    }
+                    p{
+                        @include mobile-only{
+                            @include paragraph-article;
+                        }
+                    }
+                   
+                }
+                .article__icon{
+                    i{
+                        @include mobile-only{
+                        translate: 300px -40px;
+                        }
                     }
                 }
-            }   
-            .article__content
-            {
-                @include mobile-only{
-                }
-                h3{
-                    @include mobile-only{
-                        @include title-h3;
-                        margin-top: 0.5rem;
-                    }
-                }
-                p{
-                    @include mobile-only{
-                        @include paragraph-article;
-                    }
-                }
+
             }
+           
         } 
     }    
 }

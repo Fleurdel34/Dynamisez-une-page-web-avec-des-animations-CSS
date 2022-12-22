@@ -178,6 +178,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .article__icon .fa-sharp {
+    color: #000000;
+    font-size: 24px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 768px) {
   .title__list {
     display: flex;
     flex-direction: column;
@@ -290,6 +297,8 @@
     object-fit: cover;
     height: 144px;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -304,20 +313,20 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .section__products .article__cards .article__products .article__link .article__textnew {
-    display: flex;
-    flex-wrap: nowrap;
+  .section__products .article__cards .article__products .article__link .article__card__content {
+    height: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  .section__products .article__cards .article__products .article__link .article__textnew img {
-    object-fit: cover;
-    height: 144px;
-    width: 100%;
+  .section__products .article__cards .article__products .article__link .article__card__content .article__textnew {
+    display: inline-block;
+    translate: 250px -130px;
   }
 }
 @media screen and (max-width: 768px) {
-  .section__products .article__cards .article__products .article__link .article__textnew span {
+  .section__products .article__cards .article__products .article__link .article__card__content .article__textnew span {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #094b3a;
     font-weight: bold;
@@ -328,7 +337,14 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .section__products .article__cards .article__products .article__link .article__content h3 {
+  .section__products .article__cards .article__products .article__link .article__card__content .article__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__products .article__cards .article__products .article__link .article__card__content .article__content h3 {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #000000;
     font-size: 18px;
@@ -338,12 +354,18 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .section__products .article__cards .article__products .article__link .article__content p {
+  .section__products .article__cards .article__products .article__link .article__card__content .article__content p {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #000000;
     font-size: 18px;
     font-style: normal;
     padding-top: 5px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__products .article__cards .article__products .article__link .article__card__content .article__icon i {
+    translate: 300px -40px;
   }
 }
 

@@ -17,3 +17,16 @@
         }
     }
 }
+
+.article__icon{
+        .fa-sharp{
+        @include mobile-only{
+            @include main-btn-heart;
+        }
+        }
+        &:hover{
+            @include mobile-only{
+                
+            }
+        }
+}
