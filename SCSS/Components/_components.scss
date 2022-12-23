@@ -1,19 +1,20 @@
 .header__btn{
     @include mobile-only{
     border-radius: 40px;
+    border: none;
     padding: 15px 20px 15px 20px;
     color:$colour-text-white;
-    background-color:$colour-header-btn;
+    background-color: $colour-header-btn;
+    box-shadow: $box-shadow-btn, $box-shadow-btn-outset;
     font-size: nth($font-size, 6);
     font-weight: $font-weight-bold;
     margin-bottom: 3rem;
-    box-shadow: $box-shadow-btn;
     transition: background-color 200ms, box-shadow 400ms;
     }
     &:hover{
         @include mobile-only{
             background-color: rgb(255, 121, 218,0.8);
-            box-shadow: inset -15px -15px 15px $colour-primary;
+            box-shadow: inset -15px -15px 15px $colour-primary, $box-shadow-btn-outset-hover ;
         }
     }
 }

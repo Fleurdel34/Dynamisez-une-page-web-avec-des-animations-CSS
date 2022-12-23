@@ -66,66 +66,83 @@
         display: flex;
         flex-direction: column;
         background-color: $colour-grey-more-clear;
-        margin-top: 3rem;
+        margin-top:3rem ;
+        height: 1105px;
     }
 
+.section__header
+{
+    height:100px;
+}
 .title__products{
     @include mobile-only{
         h2{
             @include title-h2;
             padding: 50px 15px 20px 15px;
+            translate: 0px 0px;
         } 
     }
+}
+.article__textnew{
+
+    @include mobile-only{
+       translate: 255px 25px;         
+    }
+    span{
+        @include mobile-only{
+            @include new-text;
+        }
+    }
+  
+}
+.article__textnew__second{
+
+    @include mobile-only{
+       translate: 255px 235px;        
+    }
+    span{
+        @include mobile-only{
+            @include new-text;
+        }
+    }
+  
 }
 
 .article__cards
 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .article__products{
+        
         @include mobile-only{
-            width: 100%;
             @include card;
+   
         } 
         .article__link{
             @include mobile-only{
                 text-decoration: none;
+                
             }
             img{
                 @include mobile-only{
                     object-fit: cover;
                     height: 144px;
                     width: 100%;
-                    border-top-left-radius:20px;
-                    border-top-right-radius:20px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
                 }
-            }
-            span{
-                @include mobile-only{
-                    @include new-text;
-                }
-            }
+            }          
             .article__card__content{
 
                 @include mobile-only{
-                    height:60px;
-                    border-bottom-left-radius:20px;
-                    border-bottom-right-radius:20px;
+                    height:70px; 
                 }
-                .article__textnew{
-
-                    @include mobile-only{
-                        display: inline-block;
-                        translate: 250px -130px;                     
-                    }
-                    span{
-                        @include mobile-only{
-                            @include new-text;
-                        }
-                    }
-                }   
                 .article__content
                 {
                     @include mobile-only{
-                        @include article-content;
+                        @include article-content; 
                     }
                     h3{
                         @include mobile-only{

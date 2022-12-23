@@ -54,16 +54,15 @@
 
 @mixin card{
     background: $colour-text-white;
-    width: 100%;
-    margin-bottom: 2rem;
-    
+    width: 90%;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    box-shadow: $box-shadow-btn-outset;
 }
 
 @mixin img-article{
     width:100%;
     height: 114px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     object-fit:cover; 
 }
 
