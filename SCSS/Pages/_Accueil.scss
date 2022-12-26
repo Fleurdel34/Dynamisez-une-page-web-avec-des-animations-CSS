@@ -98,7 +98,8 @@
 .article__textnew__second{
 
     @include mobile-only{
-       translate: 255px 235px;        
+       translate: 255px 235px;
+             
     }
     span{
         @include mobile-only{

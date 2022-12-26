@@ -23,4 +23,9 @@ $box-shadow-li: 5px 8px 10px $colour-grey-clear;
 $box-shadow-btn-outset-hover: 5px 8px 10px $colour-slate-grey;
 $box-shadow-btn-outset: 5px 8px 10px #c7c7c7;
 $breakpoints:(mobile: 768px);
+$anim-spinner:1000ms;
+$number-spinner:5;
+$anim-delay:$anim-spinner/$number-spinner;
+
+
 

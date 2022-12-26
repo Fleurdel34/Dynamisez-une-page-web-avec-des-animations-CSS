@@ -67,11 +67,21 @@
     
     h2{
         @include mobile-only{
-            @include title-h2-menu;    
+            @include title-h2-menu;  
+            border-bottom: 2px solid rgb(0, 183, 255);
+            width: 45px;
         }
     }
     .content_menu
     { 
+        @include mobile-only{
+            @include li-menu;
+            background-color: $colour-grey-more-clear;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
         h3{
             @include mobile-only{
                 @include title-h3;    
