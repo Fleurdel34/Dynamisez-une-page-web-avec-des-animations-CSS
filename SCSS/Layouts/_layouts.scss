@@ -36,7 +36,7 @@ body{
                 margin-right: 5rem;
             }
         }
-    } 
+    }
 }
 
 .header__form{
@@ -74,6 +74,7 @@ body{
         align-items: center;
         background-color:$colour-grey-more-clear;
         text-align: center;
+        height: 277px;
     }
     h1{
         @include mobile-only{

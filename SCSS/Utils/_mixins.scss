@@ -44,6 +44,15 @@
     font-weight: 400;
 }
 
+@mixin title-h2-menu{
+    font-family: $font-family;
+    color:$colour-black;
+    font-size:nth($font-size,5);
+    opacity:0.7;
+    font-weight: 300;
+    border-bottom: 2px solid rgb(0, 183, 255);
+}
+
 @mixin title-h3{
     font-family: $font-family;
     color:$colour-black;
@@ -53,7 +62,7 @@
 }
 
 @mixin card{
-    background: $colour-text-white;
+    background: $colour-background-white;
     width: 90%;
     margin-bottom: 1rem;
     border-radius: 20px;
@@ -92,9 +101,21 @@
 }
 
 @mixin main-btn-heart{
+    font-size: nth($font-size, 1);
     color: $colour-black;
-    font-size: nth($font-size, 2);
-    background-color: $colour-text-white;
+    translate: 300px -40px;
+}
+
+@mixin main-btn-heart-solid{
+    font-size: nth($font-size, 1);
+    color: $colour-primary;
+    translate: 300px -40px;
+}
+
+@mixin main-btn-heart-menu{
+    color: $colour-black;
+    font-size: nth($font-size, 1);
+    background-color: $colour-grey-more-clear;
 }
 
 @mixin paragraph-footer{

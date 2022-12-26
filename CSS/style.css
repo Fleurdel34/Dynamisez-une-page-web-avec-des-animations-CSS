@@ -70,6 +70,7 @@
     align-items: center;
     background-color: #f7f7f7;
     text-align: center;
+    height: 277px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -179,12 +180,76 @@
 }
 
 @media screen and (max-width: 768px) {
-  .article__icon .fa-sharp {
+  .article__icon__regular .fa-sharp {
+    font-size: 26px;
     color: #000000;
-    font-size: 24px;
-    background-color: #fff;
+    translate: 300px -40px;
   }
 }
+@media screen and (max-width: 768px) {
+  .article__icon__regular .fa-sharp:hover {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article__icon .fa-regular {
+    font-size: 26px;
+    color: #000000;
+    translate: 300px -40px;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__icon .article__icon__solid__half + .article__icon__solid {
+    font-size: 26px;
+    color: #9356DC;
+    translate: 300px -40px;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__icon .article__icon__regular:hover {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__icon .article__icon__regular:hover .article__icon__solid__half {
+    font-size: 26px;
+    color: #9356DC;
+    translate: 300px -40px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page__title i {
+    color: #000000;
+    font-size: 26px;
+    background-color: #f7f7f7;
+    translate: -28px 0px;
+  }
+}
+.main__btn button {
+  border-radius: 40px;
+  color: #fff;
+  background-color: #e170da;
+  box-shadow: inset -15px -20px 15px 0px #be65db, 5px 8px 10px #c7c7c7;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 200ms, box-shadow 400ms;
+  padding: 15px 40px 15px 40px;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .main__btn button:hover {
+    background-color: rgba(255, 121, 218, 0.8);
+    box-shadow: inset -15px -15px 15px #9356DC, 5px 8px 10px #708090;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .title__list {
     display: flex;
@@ -381,6 +446,115 @@
 @media screen and (max-width: 768px) {
   .section__products .article__cards .article__products .article__link .article__card__content .article__icon i {
     translate: 300px -40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__link {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .header__link img {
+    width: 40%;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .header__link i {
+    color: black;
+    font-size: 20px;
+    translate: 15px 25px;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    background-color: #f7f7f7;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title img {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title .page__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px 15px 15px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    translate: 0px -48px;
+    background-color: #f7f7f7;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title .page__title h1 {
+    font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title .page__title i {
+    color: #000000;
+    font-size: 26px;
+    background-color: #f7f7f7;
+    translate: -28px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__content {
+    background-color: #f7f7f7;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__content h2 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: 300;
+    border-bottom: 2px solid rgb(0, 183, 255);
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__content .content_menu h3 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__content .content_menu p {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__content .content_menu .paragraph_price {
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__btn {
+    background-color: #f7f7f7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
