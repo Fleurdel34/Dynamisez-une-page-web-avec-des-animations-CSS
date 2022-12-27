@@ -23,9 +23,12 @@ $box-shadow-li: 5px 8px 10px $colour-grey-clear;
 $box-shadow-btn-outset-hover: 5px 8px 10px $colour-slate-grey;
 $box-shadow-btn-outset: 5px 8px 10px #c7c7c7;
 $breakpoints:(mobile: 768px);
-$anim-spinner:1000ms;
+$anim-spinner:3000ms;
 $number-spinner:5;
-$anim-delay:$anim-spinner/$number-spinner;
-
-
+$anim-delay:calc($anim-spinner/$number-spinner);
+$animation-duration:4s;
+$animation-duration-end:0s;
+$number-menu:3;
+$animation-duration-menu:3000ms;
+$anim-delay-menu: calc($animation-duration-menu/$number-menu);
 

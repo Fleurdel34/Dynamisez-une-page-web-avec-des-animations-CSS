@@ -12,6 +12,7 @@
     "url": "git+https://github.com/Fleurdel34/Dynamisez-une-page-web-avec-des-animations-CSS.git"
   },
   "author": "",
+  "browserslist":"last 4 versions",
   
   "bugs": {
     "url": "https://github.com/Fleurdel34/Dynamisez-une-page-web-avec-des-animations-CSS/issues"

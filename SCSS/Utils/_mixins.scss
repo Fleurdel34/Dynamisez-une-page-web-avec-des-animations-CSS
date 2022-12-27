@@ -16,10 +16,9 @@
 
 @mixin li-menu{
     background-color: $colour-background-white;
-    border-radius: 20px;
-    width:85%;
-    height:75px;
-    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    width:92%;
+    height:60px;
     margin-bottom: 1rem;
     box-shadow: $box-shadow-li;
 }
