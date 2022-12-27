@@ -64,7 +64,6 @@
     @include mobile-only{
         background-color: $colour-grey-more-clear;
         height: 330px;
-        
     }
     h2{
         @include mobile-only{
@@ -102,7 +101,6 @@
                 @include mobile-only{
                     opacity: 0.8;
                     font-size: nth($font-size,6);
-                    
                 }
             }
         }
@@ -113,7 +111,6 @@
                 font-size: nth($font-size,6);   
                 font-weight:$font-weight-bold;
                 margin-top: 2rem;
-                transform: translateX(60px);
             }
         }
         .checkbox{
@@ -133,20 +130,18 @@
         }
         &:hover{
             .paragraph_price{
-                transform: translateX(0px);
+                transform: translateX(-10px);
             }
             .checkbox{
                 visibility: visible;
                 transform: translateX(0px);
-
-
             }
 
         }
     } 
 }
 #content__menu{
-    height: 420px;
+    height: 370px;
 }
 
 @keyframes anim{

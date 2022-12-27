@@ -576,7 +576,7 @@
     background-color: #fff;
     border-radius: 10px;
     width: 92%;
-    height: 60px;
+    height: 70px;
     margin-bottom: 1rem;
     box-shadow: 5px 8px 10px #eaeaea;
     display: flex;
@@ -618,7 +618,6 @@
     font-size: 14px;
     font-weight: bold;
     margin-top: 2rem;
-    transform: translateX(60px);
   }
 }
 .section__content .content__menu .checkbox {
@@ -637,7 +636,7 @@
   visibility: hidden;
 }
 .section__content .content__menu:hover .paragraph_price {
-  transform: translateX(0px);
+  transform: translateX(-10px);
 }
 .section__content .content__menu:hover .checkbox {
   visibility: visible;
@@ -645,7 +644,7 @@
 }
 
 #content__menu {
-  height: 420px;
+  height: 370px;
 }
 
 @keyframes anim {
