@@ -21,6 +21,8 @@
 
 
 .icon__regular{
+    display: flex;
+    justify-content: flex-end;
     .fa-regular{
         @include mobile-only{
             @include main-btn-heart;
@@ -34,6 +36,8 @@
     }
 }
 .icon__solid{
+    display: flex;
+    justify-content: flex-end;
     .fa-solid{
         @include mobile-only{
             @include main-btn-heart-solid;

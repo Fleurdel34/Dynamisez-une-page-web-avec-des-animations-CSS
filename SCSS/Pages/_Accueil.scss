@@ -86,7 +86,9 @@
 .article__textnew{
 
     @include mobile-only{
-       translate: 255px 25px;         
+        translate: -40px 20px;
+        display: flex;
+        justify-content: flex-end;        
     }
     span{
         @include mobile-only{
@@ -98,8 +100,9 @@
 .article__textnew__second{
 
     @include mobile-only{
-       translate: 255px 235px;
-             
+       translate: -40px 220px;
+       display: flex;
+       justify-content: flex-end;     
     }
     span{
         @include mobile-only{

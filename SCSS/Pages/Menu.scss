@@ -91,33 +91,44 @@
             }
         }
         .info{
-            padding: 10px;
+            padding: 15px 10px 0px 10px;
+            width: 58%; 
+            
             h3{
                 @include mobile-only{
                     @include title-h3; 
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
             p{
                 @include mobile-only{
                     opacity: 0.8;
                     font-size: nth($font-size,6);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
         }
-        .paragraph_price
+        .paragraph__price
         {
             @include mobile-only{
+                display: flex;
+                justify-content: center;
                 opacity: 0.8;
                 font-size: nth($font-size,6);   
                 font-weight:$font-weight-bold;
                 margin-top: 2rem;
+                transform: translateX(65px);
             }
         }
         .checkbox{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 60px;
+            height: 70px;
             width: 15%;
             border: 1px solid $colour-tertiary;
             background-color: $colour-tertiary;
@@ -129,8 +140,8 @@
             visibility: hidden;
         }
         &:hover{
-            .paragraph_price{
-                transform: translateX(-10px);
+            .paragraph__price{
+                transform: translateX(10px);
             }
             .checkbox{
                 visibility: visible;
@@ -141,7 +152,7 @@
     } 
 }
 #content__menu{
-    height: 370px;
+    height: 410px;
 }
 
 @keyframes anim{
