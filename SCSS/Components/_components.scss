@@ -1,5 +1,4 @@
 .header__btn{
-    @include mobile-only{
     border-radius: 40px;
     border: none;
     padding: 15px 20px 15px 20px;
@@ -10,12 +9,16 @@
     font-weight: $font-weight-bold;
     margin-bottom: 3rem;
     transition: background-color 200ms, box-shadow 400ms;
+    width:230px;
+    margin-left: 1.5rem;
+    @include mobile-only{
+        width:58%;
+        margin-left: 0;
     }
     &:hover{
-        @include mobile-only{
-            background-color: rgb(255, 121, 218,0.8);
-            box-shadow: inset -15px -15px 15px $colour-primary, $box-shadow-btn-outset-hover ;
-        }
+        background-color: rgb(255, 121, 218,0.8);
+        box-shadow: inset -15px -15px 15px $colour-primary, $box-shadow-btn-outset-hover ;
+      
     }
 }
 
@@ -24,14 +27,10 @@
     display: flex;
     justify-content: flex-end;
     .fa-regular{
-        @include mobile-only{
-            @include main-btn-heart;
-            color: $colour-black;          
-        }
+        @include main-btn-heart;
+        color: $colour-black;  
         &:hover{
-            @include mobile-only{
-                color: $colour-text-white;
-            }
+            color: $colour-text-white;
         }
     }
 }
@@ -39,18 +38,12 @@
     display: flex;
     justify-content: flex-end;
     .fa-solid{
-        @include mobile-only{
-            @include main-btn-heart-solid;
-            color: $colour-background-white;
-        }
+        @include main-btn-heart-solid;
+        color: $colour-background-white;
         &:hover{
-            @include mobile-only{
-               
-                @include main-btn-heart-solid;
-                transition: all 3000ms;
-                transform-origin: bottom 50%;
-                color: $colour-primary;
-            }
+            transition: all 3000ms;
+            transform-origin: bottom 50%;
+            color: $colour-primary;
         }
     }
 }
@@ -88,10 +81,8 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
         &:hover{
-            @include mobile-only{
             background-color: rgb(255, 121, 218,0.8);
             box-shadow: inset -15px -15px 15px $colour-primary, $box-shadow-btn-outset-hover ;
-            }
         }
     }
 }

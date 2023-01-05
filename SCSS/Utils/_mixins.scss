@@ -7,7 +7,7 @@
 @mixin li{
     background-color: $colour-grey-more-clear;
     border-radius: 20px;
-    width:85%;
+    width:90%;
     height:75px;
     padding: 30px 5px 30px 5px;
     margin-bottom: 1rem;
@@ -17,7 +17,7 @@
 @mixin li-menu{
     background-color: $colour-background-white;
     border-radius: 10px;
-    width:92%;
+    width:25%;
     height:70px;
     margin-bottom: 1rem;
     box-shadow: $box-shadow-li;
@@ -49,7 +49,7 @@
 @mixin title-h2-footer{
     font-family: $font-family-logo;
     color:$colour-text-white;
-    font-size:nth($font-size,5);
+    font-size:nth($font-size,3);
     font-weight: 400;
 }
 
@@ -71,7 +71,6 @@
 
 @mixin card{
     background: $colour-background-white;
-    width: 90%;
     margin-bottom: 1rem;
     border-radius: 20px;
     box-shadow: $box-shadow-btn-outset;
@@ -109,11 +108,11 @@
 }
 
 @mixin main-btn-heart{
-    translate: -15px -40px;
+    translate: -5px -40px;
     font-size: nth($font-size,1);
 }
 @mixin main-btn-heart-solid{
-    translate: -18px -65px;
+    translate: -8px -64px;
     font-size: nth($font-size,4);
 }
 
@@ -127,7 +126,7 @@
 @mixin paragraph-footer{
     font-family: $font-family;
     color:$colour-text-white;
-    font-size:nth($font-size,6);
+    font-size:nth($font-size,4);
 }
 
 

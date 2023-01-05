@@ -1,12 +1,17 @@
 .title__list{
+    display: flex;
+    flex-direction: column;
     @include mobile-only{
         display: flex;
         flex-direction: column;
     }
     h2{
+        @include title-h2;
+        padding: 0px 15px 20px 0px;
+        margin-left: 1.5rem;
         @include mobile-only{
-            @include title-h2;
             padding: 50px 15px 20px 15px;
+            margin-left: 0;
         }
     }
     
@@ -14,76 +19,90 @@
 
 .elements__list
 {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 1.5rem;
+    width: 100%;
+
     @include mobile-only{
         display: flex;
         flex-direction: column;
         align-items: center;
-        list-style-type: none;
+        margin-left: 0;
     }
     .list__link{
-        @include mobile-only{
-            text-decoration: none;
-            color:$colour-grey; 
-        }
+        text-decoration: none;
+        color:$colour-grey;
     }
     li{
+        @include li;
+        margin-right: 2rem;
         @include mobile-only{
-            @include li;
+            margin-right: 0;
         }
     }
 
     i{
-        @include mobile-only{
-            color: $colour-grey;
-            margin-right: 1rem;
-            margin-left: 1rem;
-        }
+        color: $colour-grey;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
     #icon__first.fa-sharp{
-        @include mobile-only{
-            margin-right: 1.3rem;
-        }
+        margin-right: 1.3rem;
+
     }
     #icon__store.fa-sharp{
-        @include mobile-only{
-            color: $colour-primary;
-        }
+        color: $colour-primary;
     }
     span{
+        @include span-header;
         @include mobile-only{
             @include span-header;
         }
     } 
     span:nth-child(1){
-        @include mobile-only{
-            @include icon-header-number;
-        }
+        @include icon-header-number;
     }
 }
 
 .section__products{
+    background-color: $colour-grey-more-clear;
+    margin-top: 2rem;
+    height: 350px;
     @include mobile-only{
         display: flex;
         flex-direction: column;
-        background-color: $colour-grey-more-clear;
-        margin-top:3rem ;
+        margin-top:3rem;
         height: 1105px;
     }
 
 .section__header
 {
-    height:100px;
-}
-.title__products{
+    height: 80px;
+
     @include mobile-only{
-        h2{
-            @include title-h2;
-            padding: 50px 15px 20px 15px;
-            translate: 0px 0px;
-        } 
+        height: 100px;
     }
 }
+.title__products{
+        h2{
+            @include title-h2;
+            padding: 20px 15px 20px 0px;
+            translate: 0px 0px;
+            margin-left: 1.5rem;
+
+            @include mobile-only{
+            padding: 50px 15px 20px 15px;
+            margin-left: 0;
+            }
+        } 
+}
+
 .article__textnew{
+    translate: 130px 25px;
+    display: flex;
+    justify-content: flex-start; 
 
     @include mobile-only{
         translate: -40px 20px;
@@ -91,13 +110,14 @@
         justify-content: flex-end;        
     }
     span{
-        @include mobile-only{
-            @include new-text;
-        }
+        @include new-text;
     }
   
 }
 .article__textnew__second{
+    translate: 375px -10px;
+    display: flex;
+    justify-content: flex-start; 
 
     @include mobile-only{
        translate: -40px 220px;
@@ -105,9 +125,7 @@
        justify-content: flex-end;     
     }
     span{
-        @include mobile-only{
-            @include new-text;
-        }
+        @include new-text;
     }
   
 }
@@ -116,53 +134,52 @@
 {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 1.5rem;
+
+    @include mobile-only{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
     .article__products{
-        
+         
+        @include card;
+        width: 25%;
+        margin-right: 3rem;
+
         @include mobile-only{
-            @include card;
-   
+            width: 90%;
+            margin-right: 0;
         } 
         .article__link{
-            @include mobile-only{
-                text-decoration: none;
-                
-            }
+            text-decoration: none;
             img{
-                @include mobile-only{
-                    object-fit: cover;
-                    height: 144px;
-                    width: 100%;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                }
+                object-fit: cover;
+                height: 144px;
+                width: 100%;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
             }          
             .article__card__content{
 
-                @include mobile-only{
-                    height:70px; 
-                }
+                height:70px; 
                 .article__content
                 {
-                    @include mobile-only{
-                        @include article-content; 
-                    }
+                    @include article-content; 
                     h3{
-                        @include mobile-only{
-                            @include title-h3;
-                            margin-top: 0.5rem;
-                        }
+                        @include title-h3;
+                        margin-top: 0.5rem;
                     }
                     p{
-                        @include mobile-only{
-                            @include paragraph-article;
-                        }
+                        @include paragraph-article;
                     }
                    
                 }
                 .article__icon{
                     i{
+                        translate: 300px -40px;
+
                         @include mobile-only{
                         translate: 300px -40px;
                         }

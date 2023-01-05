@@ -1,59 +1,68 @@
 .header__link
 {
-    @include mobile-only{
-        display: flex;
-        img{
-            @include mobile-only{
-                width:40%;
-                margin-top: 1.5rem;
-                margin-bottom: 0.5rem;
-                margin-left: 5rem ;
-                margin-right: 5rem;
-            }
+    display: flex;
+    img{
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 5rem ;
+        margin-right: 5rem;
+        @include mobile-only{
+            width:40%;
         }
-        i{
-            @include mobile-only{
-            color: black;
-            font-size: nth($font-size,4);
+    }
+    i{
+        color: black;
+        font-size: nth($font-size,4);
+        translate: 15px 35px;
+        opacity: 0.8;
+
+        @include mobile-only{
             translate: 15px 25px;
-            opacity: 0.8;
-            }
         }
     }
 }
 .header__title
 {
-    @include mobile-only{
     background-color: $colour-grey-more-clear; 
+    height: 500px;
+
+    @include mobile-only{
     height: 300px;
     }
     img{
-        @include mobile-only{
         width:100%;
+        height: 400px;
+        object-fit: cover;
+
+        @include mobile-only{
         height: 250px;
         }
     }
     .page__title
     {
-        @include mobile-only{
         display: flex;
-        justify-content: space-between;
         padding: 25px 0px 15px 15px;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
         translate: 0px -48px;
         background-color: $colour-grey-more-clear;
+
+        @include mobile-only{
+        justify-content: space-between;
         } 
         h1{
-            @include mobile-only{
-                font-family: $font-family-logo;
-                font-size:nth($font-size, 1);
+            font-family: $font-family-logo;
+            font-size:26;
 
+            @include mobile-only{
+                font-size:nth($font-size, 1);
             }
         }
         i{
+            @include main-btn-heart-menu;
+            translate: 28px 10px;
+
             @include mobile-only{
-                @include main-btn-heart-menu;
                 translate: -28px 0px;
             }
         }
@@ -61,68 +70,67 @@
 }
 .section__content
 {
+    background-color: $colour-grey-more-clear;
+    display: flex;
+    height: 150px;
     @include mobile-only{
-        background-color: $colour-grey-more-clear;
+        display: flex;
+        flex-direction: column;
         height: 330px;
     }
     h2{
-        @include mobile-only{
-            @include title-h2-menu;  
-            border-bottom: 2px solid rgb(0, 183, 255);
-            width: 45px;
-            margin-bottom: 0.5rem;
-            margin-left: 0.8rem;
-        }
+        @include title-h2-menu;
+        border-bottom: 2px solid rgb(0, 183, 255);
+        width: 45px;
+        height: 24px;
+        margin-bottom:0.5rem;
+        margin-left: 0.8rem;
     }
  
     .content__menu
     { 
-        @include mobile-only{
-
-            @include li-menu;
-            display: flex;
-            justify-content: space-between;
-            margin-left: 0.8rem;
-            animation: anim 3s ease-in-out alternate; 
-            @for $i from 1 through $number-menu {
-                &--#{$i} {
-                    animation-delay: $anim-delay-menu * $i;
-                }
+        @include li-menu;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-left: 0.8rem;
+        animation: anim 3s ease-in-out alternate; 
+        @for $i from 1 through $number-menu {
+            &--#{$i} {
+                animation-delay: $anim-delay-menu * $i;
             }
+        }
+        @include mobile-only{
+            margin-top:0;
+            width: 92%;
         }
         .info{
             padding: 15px 10px 0px 10px;
-            width: 58%; 
-            
+            width: 50%; 
             h3{
-                @include mobile-only{
-                    @include title-h3; 
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }
-            }
-            p{
-                @include mobile-only{
-                    opacity: 0.8;
-                    font-size: nth($font-size,6);
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }
+                @include title-h3; 
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
+        p{
+            opacity: 0.8;
+            font-size: nth($font-size,6);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
         .paragraph__price
         {
-            @include mobile-only{
-                display: flex;
-                justify-content: center;
-                opacity: 0.8;
-                font-size: nth($font-size,6);   
-                font-weight:$font-weight-bold;
-                margin-top: 2rem;
-                transform: translateX(65px);
-            }
+            display: flex;
+            justify-content: center;
+            opacity: 0.8;
+            font-size: nth($font-size,6);   
+            font-weight:$font-weight-bold;
+            margin-top: 2rem;
+            transform: translateX(65px);
         }
         .checkbox{
             display: flex;
@@ -151,8 +159,21 @@
         }
     } 
 }
+
 #content__menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    @include mobile-only{
     height: 410px;
+    }
+    :nth-child(5){
+        margin-top: 0;
+        margin-left: 4.5rem;
+        @include mobile-only{
+            margin-left: 0.8rem;
+        }
+    }
 }
 
 @keyframes anim{
@@ -168,11 +189,16 @@ to{
 
 .main__btn
 {
+    background-color: $colour-grey-more-clear;
+    width: 100%;
+    display: flex;
+    padding-left: 11px;
     @include mobile-only{
-        background-color: $colour-grey-more-clear;
-        width: 100%;
-        display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 0px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+        height: 50px;
     }
 }
