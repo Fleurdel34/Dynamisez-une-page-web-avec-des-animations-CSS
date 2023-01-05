@@ -6,6 +6,9 @@
         margin-bottom: 0.5rem;
         margin-left: 5rem ;
         margin-right: 5rem;
+        @include tablette-only{
+            width:60%;
+        }
         @include mobile-only{
             width:40%;
         }
@@ -72,7 +75,11 @@
 {
     background-color: $colour-grey-more-clear;
     display: flex;
-    height: 150px;
+    @include tablette-only{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     @include mobile-only{
         display: flex;
         flex-direction: column;
@@ -86,26 +93,51 @@
         margin-bottom:0.5rem;
         margin-left: 0.8rem;
     }
- 
+    .menu_container
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
     .content__menu
     { 
-        @include li-menu;
         display: flex;
+        height: 9vh;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 0.75rem;
         justify-content: space-between;
-        margin-top: 2rem;
+        overflow: hidden;
+        position: relative;
+       @include li-menu;
+        /*margin-top: 2rem;
         margin-left: 0.8rem;
+        margin-bottom: 2rem;*/
         animation: anim 3s ease-in-out alternate; 
         @for $i from 1 through $number-menu {
             &--#{$i} {
                 animation-delay: $anim-delay-menu * $i;
             }
         }
+        @include tablette-only{
+            width:45%;
+            display: flex;
+            align-items: center; 
+        }
         @include mobile-only{
             margin-top:0;
             width: 92%;
         }
         .info{
-            padding: 15px 10px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            justify-content: space-between;
+            overflow: hidden;
+            white-space: nowrap;
+            /*padding: 15px 10px 0px 10px;*/
             width: 50%; 
             h3{
                 @include title-h3; 
@@ -125,37 +157,49 @@
         .paragraph__price
         {
             display: flex;
-            justify-content: center;
-            opacity: 0.8;
+            align-items: flex-end;
+            justify-content: space-around;
             font-size: nth($font-size,6);   
             font-weight:$font-weight-bold;
-            margin-top: 2rem;
-            transform: translateX(65px);
+            /*margin-top: 2rem;*/
+            padding-right:1rem;
+            padding-left: 1rem;
+            p{
+            transition: all 0.5 ease-in-out;
+            transform:translateX(0);
+            transform-origin: right;
+            }
+
         }
         .checkbox{
+            position: absolute;
+            top: 0;
+            right: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 70px;
-            width: 15%;
-            border: 1px solid $colour-tertiary;
+            height: 100%;
+            width: 20%;
+            border: 2px solid $colour-tertiary;
             background-color: $colour-tertiary;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
             color:$colour-background-white;
             font-size: nth($font-size,4); 
-            margin-bottom: 0.5rem;
+           /* margin-bottom: 0.5rem;*/
+            transition: all 0.5 ease-in-out;
             visibility: hidden;
+            transform:translateX(100%);
         }
         &:hover{
-            .paragraph__price{
-                transform: translateX(10px);
-            }
-            .checkbox{
-                visibility: visible;
-                transform: translateX(0px);
+            .paragraph__price > p{
+                transform: translateX(-75px);
             }
 
+            .paragraph__price > .checkbox{
+                visibility: visible;
+                transform: translateX(0%);
+            }
         }
     } 
 }
@@ -167,9 +211,20 @@
     @include mobile-only{
     height: 410px;
     }
+    :nth-child(4){
+        @include tablette-only{
+            margin-top: 0;
+            margin-left: 4.5rem;
+        }
+    }
     :nth-child(5){
         margin-top: 0;
         margin-left: 4.5rem;
+        @include tablette-only{
+            margin-top: 0;
+            margin-left: 1rem;
+        }
+
         @include mobile-only{
             margin-left: 0.8rem;
         }

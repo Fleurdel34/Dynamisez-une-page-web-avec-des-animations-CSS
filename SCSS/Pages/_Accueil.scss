@@ -25,6 +25,11 @@
     margin-left: 1.5rem;
     width: 100%;
 
+    @include tablette-only{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
     @include mobile-only{
         display: flex;
         flex-direction: column;
@@ -38,6 +43,10 @@
     li{
         @include li;
         margin-right: 2rem;
+
+        @include tablette-only{
+            width:45%;
+        }
         @include mobile-only{
             margin-right: 0;
         }
@@ -70,6 +79,11 @@
     background-color: $colour-grey-more-clear;
     margin-top: 2rem;
     height: 350px;
+
+    @include tablette-only{
+        height: 650px;
+    }
+
     @include mobile-only{
         display: flex;
         flex-direction: column;
@@ -100,30 +114,9 @@
 }
 
 .article__textnew{
-    translate: 130px 25px;
-    display: flex;
-    justify-content: flex-start; 
-
-    @include mobile-only{
-        translate: -40px 20px;
-        display: flex;
-        justify-content: flex-end;        
-    }
-    span{
-        @include new-text;
-    }
-  
-}
-.article__textnew__second{
-    translate: 375px -10px;
-    display: flex;
-    justify-content: flex-start; 
-
-    @include mobile-only{
-       translate: -40px 220px;
-       display: flex;
-       justify-content: flex-end;     
-    }
+    position: absolute;
+    top:10px;
+    right: 10px;
     span{
         @include new-text;
     }
@@ -136,6 +129,12 @@
     display: flex;
     margin-left: 1.5rem;
 
+    @include tablette-only{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     @include mobile-only{
         display: flex;
         flex-direction: column;
@@ -147,6 +146,12 @@
         @include card;
         width: 25%;
         margin-right: 3rem;
+        position: relative;
+
+        @include tablette-only{
+            width:30%;
+            margin-bottom: 2rem;
+        }
 
         @include mobile-only{
             width: 90%;

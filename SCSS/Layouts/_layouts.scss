@@ -83,7 +83,13 @@ body{
     margin: 1.5rem;
     img{
         width: 100%;
+        @include tablette-only{
+            width:80%;
+        }
+  
     }
+
+
     @include mobile-only{
         display: flex;
         justify-content: center;
@@ -121,6 +127,14 @@ body{
         padding: 18px 10px 5px 25px;
         opacity:0.7;
         
+    }
+    @include tablette-only{
+        width:30%;
+        input{
+            @include tablette-only{
+                width:120px;
+            }
+        }
     }
 
     @include mobile-only{
@@ -210,6 +224,7 @@ body{
         font-weight: $font-weight-bold;
         margin-top: 0.5rem;
         margin-right: 1rem;
+
         @include mobile-only{
             margin-top:0; 
             margin-right: 0;
@@ -266,6 +281,11 @@ body{
     .paragrah__footer
     {
         display: flex;
+
+        @include tablette-only{
+            display: flex;
+            flex-direction: column;
+        }
 
         @include mobile-only
             {

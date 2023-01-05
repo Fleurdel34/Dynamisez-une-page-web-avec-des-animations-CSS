@@ -3,6 +3,11 @@
         @content;
     };
 }
+@mixin tablette-only{
+    @media screen and (max-width:992px){
+        @content;
+    };
+}
 
 @mixin li{
     background-color: $colour-grey-more-clear;
