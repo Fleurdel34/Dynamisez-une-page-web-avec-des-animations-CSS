@@ -48,7 +48,7 @@
 
         &:hover{
             transition: all 3000ms;
-            transform-origin: bottom 50%;
+            transform-origin: center;
             color: $colour-primary;
         }
     }

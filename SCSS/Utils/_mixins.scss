@@ -113,12 +113,12 @@
 }
 
 @mixin main-btn-heart{
-    translate: -5px -40px;
+    transform:translate(-5px, -40px);
     font-size: nth($font-size,1);
 }
 
 @mixin main-btn-heart-solid{
-    translate: -8px -64px;
+    transform:translate(-8px, -64px);
     font-size: nth($font-size,4);
 }
 

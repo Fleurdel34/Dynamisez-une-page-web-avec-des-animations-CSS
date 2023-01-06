@@ -361,7 +361,7 @@
   justify-content: flex-end;
 }
 .icon__regular .fa-regular {
-  translate: -5px -40px;
+  transform: translate(-5px, -40px);
   font-size: 26px;
   color: #000000;
 }
@@ -374,13 +374,13 @@
   justify-content: flex-end;
 }
 .icon__solid .fa-solid {
-  translate: -8px -64px;
+  transform: translate(-8px, -64px);
   font-size: 20px;
   color: #fff;
 }
 .icon__solid .fa-solid:hover {
   transition: all 3000ms;
-  transform-origin: bottom 50%;
+  transform-origin: center;
   color: #9356DC;
 }
 
@@ -541,7 +541,7 @@
   font-weight: bold;
   opacity: 1;
   padding: 20px 15px 20px 0px;
-  translate: 0px 0px;
+  transform: translate(0px, 0px);
   margin-left: 1.5rem;
 }
 @media screen and (max-width: 768px) {
@@ -662,12 +662,12 @@
 .header__link i {
   color: black;
   font-size: 20px;
-  translate: 15px 35px;
+  transform: translate(15px, 35px);
   opacity: 0.8;
 }
 @media screen and (max-width: 768px) {
   .header__link i {
-    translate: 15px 25px;
+    transform: translate(15px, 25px);
   }
 }
 
@@ -695,7 +695,7 @@
   padding: 25px 0px 15px 15px;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  translate: 0px -48px;
+  transform: translate(0px, -48px);
   background-color: #f7f7f7;
 }
 @media screen and (max-width: 768px) {
@@ -705,7 +705,7 @@
 }
 .header__title .page__title h1 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-  font-size: 26;
+  font-size: 26px;
 }
 @media screen and (max-width: 768px) {
   .header__title .page__title h1 {
@@ -716,11 +716,11 @@
   color: #000000;
   font-size: 26px;
   background-color: #f7f7f7;
-  translate: 28px 10px;
+  transform: translate(28px, 10px);
 }
 @media screen and (max-width: 768px) {
   .header__title .page__title i {
-    translate: -28px 0px;
+    transform: translate(-28px, 0px);
   }
 }
 
@@ -837,7 +837,7 @@
   padding-left: 1rem;
 }
 .section__content .content__menu .paragraph__price p {
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: translateX(0);
   transform-origin: right;
 }
@@ -856,7 +856,7 @@
   border-bottom-right-radius: 10px;
   color: #fff;
   font-size: 20px;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in-out;
   visibility: hidden;
   transform: translateX(100%);
 }

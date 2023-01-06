@@ -20,11 +20,11 @@
     i{
         color: black;
         font-size: nth($font-size,4);
-        translate: 15px 35px;
+        transform:translate(15px, 35px);
         opacity: 0.8;
 
         @include mobile-only{
-            translate: 15px 25px;
+            transform:translate(15px, 25px);
         }
     }
 }
@@ -54,7 +54,7 @@
         padding: 25px 0px 15px 15px;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
-        translate: 0px -48px;
+        transform:translate(0px, -48px);
         background-color: $colour-grey-more-clear;
 
         @include mobile-only{
@@ -63,7 +63,7 @@
 
         h1{
             font-family: $font-family-logo;
-            font-size:26;
+            font-size:26px;
 
             @include mobile-only{
                 font-size:nth($font-size, 1);
@@ -72,10 +72,10 @@
 
         i{
             @include main-btn-heart-menu;
-            translate: 28px 10px;
+            transform:translate(28px, 10px);
 
             @include mobile-only{
-                translate: -28px 0px;
+                transform:translate(-28px, 0px);
             }
         }
     }    
@@ -180,7 +180,7 @@
             padding-left: 1rem;
 
             p{
-            transition: all 0.5 ease-in-out;
+            transition: all 0.5s ease-in-out;
             transform:translateX(0);
             transform-origin: right;
             }
@@ -201,7 +201,7 @@
             border-bottom-right-radius: 10px;
             color:$colour-background-white;
             font-size: nth($font-size,4); 
-            transition: all 0.5 ease-in-out;
+            transition: all 0.5s ease-in-out;
             visibility: hidden;
             transform:translateX(100%);
         }
