@@ -21,9 +21,9 @@
 
 @mixin li-menu{
     background-color: $colour-background-white;
-    border-radius: 10px;
+    border-radius: 1rem;
     width:25%;
-    height:70px;
+    height:9vh;
     margin-bottom: 1rem;
     box-shadow: $box-shadow-li;
 }
@@ -116,6 +116,7 @@
     translate: -5px -40px;
     font-size: nth($font-size,1);
 }
+
 @mixin main-btn-heart-solid{
     translate: -8px -64px;
     font-size: nth($font-size,4);

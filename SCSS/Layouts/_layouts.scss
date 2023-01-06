@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;  
 }
+
 body{
+
+   @include tablette-only
+    {
+       overflow: hidden;
+    }
 
     @include mobile-only
     {
@@ -49,7 +55,6 @@ body{
             }
         } 
     }
-
 }
 
 @keyframes spinner {
@@ -76,24 +81,25 @@ body{
     }
 }
 
-
 .header
 {   
     display: flex;
     margin: 1.5rem;
+
     img{
         width: 100%;
+
         @include tablette-only{
             width:80%;
         }
   
     }
 
-
     @include mobile-only{
         display: flex;
         justify-content: center;
         align-items: center;
+
         img{
             @include mobile-only{
                 width:50%;
@@ -113,6 +119,7 @@ body{
     width: 20%;
     margin-left: 1.5rem;
     border-radius: 10px;
+
     input{
         border: none;
         font-family: $font-family;
@@ -123,11 +130,12 @@ body{
         margin-bottom: 1rem;
         width:150px;
     }
-    i{
+    i
+    {
         padding: 18px 10px 5px 25px;
         opacity:0.7;
-        
     }
+
     @include tablette-only{
         width:30%;
         input{
@@ -147,6 +155,7 @@ body{
         box-shadow: $box-shadow;
         padding: 15px 0px 15px 0px;
     }
+
     input{
         @include mobile-only{
             font-size: nth($font-size,6);
@@ -163,6 +172,7 @@ body{
         }
     } 
 }     
+
 .header__heading
 {
     display: flex;
@@ -177,15 +187,18 @@ body{
         height: 277px;
         margin-top:0;
     }
+
     h1{
         background-color:$colour-background-white;
         margin: 1rem 4rem 0.5rem 1.5rem;
         font-family: $font-family;
         font-size:nth($font-size, 2);
+
         @include mobile-only{
             margin: 2.5rem 4rem 1rem 4rem;
         }
     }
+
     p{
         margin-left:1.5rem;
         font-size:nth($font-size, 5);
@@ -204,10 +217,12 @@ body{
     padding: 20px 15px 30px 15px;
     display: flex;
     flex-wrap: wrap;
+
     @include mobile-only{
         display: flex;
         flex-direction: column;
     }  
+
     h2{
         @include title-h2-footer;
         margin-bottom: 0.5rem;
@@ -216,8 +231,8 @@ body{
             font-size:nth($font-size,5);
             margin-bottom: 1rem;
         }
-        
     }
+
     .icon__footer
     {   
         display: flex; 
@@ -229,6 +244,7 @@ body{
             margin-top:0; 
             margin-right: 0;
         }
+
         p{
             @include paragraph-footer;
 
@@ -237,6 +253,7 @@ body{
                 font-size:nth($font-size,6);
             }
         }
+
         i{
             color: $colour-text-white;
             padding-top: 5px;
@@ -251,33 +268,39 @@ body{
                 
         }
     }
+
     .icon__footer__second
     {   
         display: flex; 
         font-weight: $font-weight-bold;
         margin-top: 0.5rem;
         margin-right: 1rem;
+
         @include mobile-only{
             margin-right: 0;
         }
         p{
             @include paragraph-footer;
+
             @include mobile-only
             {
                 font-size:nth($font-size,6);
             }
         }
+
         i{
             color: $colour-text-white;
             padding-top: 5px;
             padding-right:10px;
             font-size: 12px;
+
             @include mobile-only
             {
                 font-size: 10px;
             }   
         }
     }
+
     .paragrah__footer
     {
         display: flex;
@@ -293,16 +316,19 @@ body{
                 flex-direction: column
             }  
         
-        p{
+        p
+        {
             @include paragraph-footer;
             margin-top: 0.5rem;
             margin-right: 1rem;
+
             @include mobile-only
             {
                 margin-right: 0;
                 font-size:nth($font-size,6);
             }   
         }
+
         .footer__link
         {
             text-decoration: none;
