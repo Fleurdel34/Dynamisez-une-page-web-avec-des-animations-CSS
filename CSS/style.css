@@ -4,17 +4,6 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 992px) {
-  body {
-    overflow: hidden;
-  }
-}
-@media screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -192,6 +181,7 @@
 @media screen and (max-width: 768px) {
   .header__heading h1 {
     margin: 2.5rem 4rem 1rem 4rem;
+    background-color: #f7f7f7;
   }
 }
 .header__heading p {
@@ -738,7 +728,6 @@
   .section__content {
     display: flex;
     flex-direction: column;
-    height: 330px;
   }
 }
 .section__content h2 {

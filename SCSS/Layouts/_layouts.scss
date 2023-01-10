@@ -5,19 +5,6 @@
     box-sizing: border-box;  
 }
 
-body{
-
-   @include tablette-only
-    {
-       overflow: hidden;
-    }
-
-    @include mobile-only
-    {
-       overflow: hidden;
-    }
-}
-
 .container
 {
     margin-left: auto;
@@ -196,6 +183,7 @@ body{
 
         @include mobile-only{
             margin: 2.5rem 4rem 1rem 4rem;
+            background-color: $colour-grey-more-clear;
         }
     }
 
