@@ -12,7 +12,7 @@
     transition: background-color 200ms, box-shadow 400ms;
     width:230px;
     margin-left: 1.5rem;
-
+    
     @include mobile-only{
         width:58%;
         margin-left: 0;
@@ -20,7 +20,7 @@
     &:hover{
         background-color: rgb(255, 121, 218,0.8);
         box-shadow: inset -15px -15px 15px $colour-primary, $box-shadow-btn-outset-hover ;
-      
+        cursor: pointer;
     }
 }
 
@@ -72,7 +72,8 @@
 
         &:hover{
             background-color: rgb(255, 121, 218,0.8);
-            box-shadow: inset -15px -15px 15px $colour-primary, $box-shadow-btn-outset-hover ;
+            box-shadow: inset -15px -15px 15px $colour-primary, $box-shadow-btn-outset-hover;
+            cursor: pointer;
         }
     }
 }

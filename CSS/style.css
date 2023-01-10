@@ -344,6 +344,7 @@
 .header__btn:hover {
   background-color: rgba(255, 121, 218, 0.8);
   box-shadow: inset -15px -15px 15px #9356DC, 5px 8px 10px #708090;
+  cursor: pointer;
 }
 
 .icon__regular {
@@ -390,6 +391,7 @@
 .main__btn button:hover {
   background-color: rgba(255, 121, 218, 0.8);
   box-shadow: inset -15px -15px 15px #9356DC, 5px 8px 10px #708090;
+  cursor: pointer;
 }
 
 .title__list {
